@@ -7,17 +7,17 @@
     <title>Memory Game</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">  -->
 </head>
 <body>
     <div class="title">
         <p>Memory Game</p>
-        <p>Choose a Difficulty level.</p>
     </div>
+    <p id="prompt">Choose a Difficulty level.</p>
     <div id="level-container">
-        <div onclick="load_items(1)">Easy<br>2x2</div><div onclick="load_items(2)">Medium<br>3x3</div><div onclick="load_items(3)">Hard<br>4x4</div>
+        <div onclick="load_items(4)">Easy<br>2x2</div><div onclick="load_items(9)">Medium<br>3x3</div><div onclick="load_items(16)">Hard<br>4x4</div>
     </div>
     <div id="game-board"></div>
 </body>

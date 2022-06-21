@@ -1,33 +1,58 @@
 *{
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     font-family: 'Potta One', cursive;;
 }
-.title > p{
+.title>p{
+    height: 10vh;
+    padding: 1vh 0px 1vh 0px;
+    box-sizing: border-box;
     text-align: center;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-    font-size: 1.5rem;
+    /* margin-top: 3vh; */
+    /* margin-bottom: 3vh; */
+    font-size: 8vh;
+    font-weight: 600;
+    color: chartreuse;
+    background-color: blueviolet;
+}
+body > p{
+    height: 8vh;
+    box-sizing: border-box;
+    text-align: center;
+    /* border: 2px solid red; */
+    padding-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    font-size: 5vh;
     color: chartreuse;
     background-color: blueviolet;
 }
 #game-board{
     display: grid;
-    margin-top: 3vh;
-    gap : 5vw 5vw
+    width: 100vw;
+    height:80vh;
+    place-items: center;
+    /* margin-top: 3vh; */
+    gap : 5vw 5vw;
+    /* border : 2px solid red; */
 }
 #level-container > div{
     border: 2px solid yellowgreen;
-    /* font-size: 4vw; */
-    padding: 10px;
-    margin: 0px 30px 0px 30px;
-    /* min-width: 25%; */
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 1vw .5vw .5vw yellowgreen;
-    flex-shrink: 0;
+    width:20vw;
+    height: 20vh;
+    transform: translate(-0.5vw,-0.25vh);
+    box-shadow: 1.5vw 1.5vh 3px yellowgreen;
+    /* flex-shrink: 0; */
+    transition: 150ms box-shadow ease-in-out, 150ms transform ease-in-out;
 }
+#level-container > div:hover{
+    transform: translate(1vw,.5vh);
+    box-shadow: 0vw 0vw 0px yellowgreen;
+    transition: 150ms box-shadow ease-in-out, 150ms transform ease-in-out;
+}
+
 #level-container{
     display: flex;
     align-items: center;
@@ -37,5 +62,8 @@
 }
 .item{
     text-align: center;
-    border: 2px solid yellowgreen;    
+    background-color: #106e9b;
+    border: 2px solid yellowgreen;
+    width:20vw;
+    height: 10vh;
 }
